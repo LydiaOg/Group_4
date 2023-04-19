@@ -1,0 +1,37 @@
+.container{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-top: 10rem;
+}
+#row{
+    text-decoration: underline red;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+section{
+    background-color: #fffaf5;
+}
+#para{
+    text-decoration: underline red;
+    text-align: start;
+}
+.row{
+  padding: 2rem;
+}
+ol{
+    list-style: circle;
+}
+#row{
+    text-align: center;
+}
+#row2{
+    text-align: center;
+}
+.mb-3{
+    margin: 2rem;
+}
+#DescribeYourCompany{
+    margin: 2rem;
+}
+.form-check-label{
+    text-align: start;
+}
