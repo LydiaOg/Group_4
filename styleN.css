@@ -1,0 +1,182 @@
+html {
+  font-size: 62.5%;
+}
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background: #fffaf5;
+  height: 100%;
+}
+img {
+  overflow-clip-margin: content-box;
+  overflow: clip;
+  vertical-align: top;
+}
+li {
+  list-style: none;
+}
+.main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  height: calc(var(--vh, 1vh) * 100);
+  overflow: hidden;
+}
+.left img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  max-width: 100%;
+}
+.right {
+  margin-top: 16rem;
+  margin-right: 2rem;
+}
+.right-text {
+  font-family: "Tilt Warp", cursive;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 6rem;
+  color: #ff490d;
+  line-height: 1.1;
+  font-weight: 300;
+}
+
+.right a{
+    color: #ff490d;
+    text-decoration: none;
+    display: flex;
+    
+}
+.direct {
+    display: grid;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+.right img{
+    margin-left: 3rem;
+    scale: .5;
+    /* margin-top: 1rem; */
+    
+    
+}
+.updown-image {
+    
+    animation-name: updown;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+
+}
+@keyframes updown {
+    0%{padding-top: -1rem;}
+    50%{padding-top: 1rem;}  
+}
+
+.vice {
+  display: flex;
+}
+.vice p {
+  font-size: 1.5rem;
+}
+.vice h3 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+.vice-left {
+  margin-left: 2rem;
+}
+.vice-right img {
+  height: auto;
+  width: 100%;
+  max-width: 100%;
+}
+
+.navbar {
+  display: flex;
+  position: fixed;
+  width: 1240px;
+  justify-content: space-between;
+  padding: 1rem 3.5rem;
+}
+.nav-list {
+  display: flex;
+  gap: 4.3rem;
+  align-items: center;
+  margin-top: 1rem;
+  font-size: 1.5rem;
+}
+#nav-icon{
+    display: none;
+    color: #ff490d;
+    scale: 3.8;
+}
+
+.nav-list button {
+  border-radius: 50px;
+  border: none;
+  background-color: #ff490d;
+  color: #fffaf5;
+  padding: 1.3rem 2.5rem;
+  font-weight: 250;
+  font-family: "MP", sans-serif;
+}
+.navbar img {
+  width: 200px;
+  color: #fffaf5;
+}
+.navbar li {
+  display: inline-block;
+
+  font-weight: 500;
+}
+
+.underline > span {
+  padding: 0;
+  margin: 0;
+  height: 2px;
+}
+
+.navbar li:after {
+  content: "";
+  width: 0px;
+  height: 2px;
+  display: block;
+  background: #ff490d;
+  transition: 300ms;
+}
+
+.navbar li:hover:after {
+  width: 100%;
+}
+@media screen and (max-width: 760px) {
+   .left {
+    display: none;
+   }
+   .right{
+    background: url(/images/hero-1-800x1200.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    width: 100vw;
+    height: 100vh;
+    margin-top: 0;
+   }
+   .right-text{
+    margin-top: 12rem;
+   }
+   .nav-list{
+    display: none;
+   }
+   #nav-icon{
+    display: initial;  
+    cursor: pointer;  
+    
+   }
+   .navbar{
+    display: flex;
+    justify-content:flex-start;
+    gap: 30rem;
+   }
+  }
